@@ -1,0 +1,47 @@
+{
+	"folders": [
+		{
+			"path": "."
+		}
+	],
+	"settings": {
+		"eslint.alwaysShowStatus": true,
+		"i18n-ally.localesPaths": "src/locales",
+		"vetur.format.defaultFormatter.html": "none",
+		"vetur.format.defaultFormatter.css": "prettier",
+		"vetur.format.defaultFormatter.postcss": "prettier",
+		"vetur.format.defaultFormatter.scss": "prettier",
+		"vetur.format.defaultFormatter.js": "prettier-eslint",
+		"vetur.format.defaultFormatter.ts": "prettier",
+		"vetur.experimental.templateInterpolationService": false,
+		"vetur.validation.template": false,
+		"vetur.completion.tagCasing": "kebab",
+		"html.format.enable": false,
+		"emmet.triggerExpansionOnTab": true,
+		"emmet.includeLanguages": {
+			"vue-html": "html",
+			"vue": "html"
+		},
+		"git.ignoreLimitWarning": true,
+		"workbench.colorCustomizations": {
+			"activityBar.activeBackground": "#f38587",
+			"activityBar.activeBorder": "#c6f9c5",
+			"activityBar.background": "#f38587",
+			"activityBar.foreground": "#15202b",
+			"activityBar.inactiveForeground": "#15202b99",
+			"activityBarBadge.background": "#c6f9c5",
+			"activityBarBadge.foreground": "#15202b",
+			"statusBar.background": "#ee5759",
+			"statusBar.foreground": "#15202b",
+			"statusBarItem.hoverBackground": "#e9292b",
+			"titleBar.activeBackground": "#ee5759",
+			"titleBar.activeForeground": "#15202b",
+			"titleBar.inactiveBackground": "#ee575999",
+			"titleBar.inactiveForeground": "#15202b99",
+			"sash.hoverBorder": "#f38587",
+			"statusBarItem.remoteBackground": "#ee5759",
+			"statusBarItem.remoteForeground": "#15202b"
+		},
+		"peacock.color": "#ee5759"
+	}
+}

@@ -1,14 +1,29 @@
 import Vue from 'vue';
 import VueRouter from 'vue-router';
-import Home from '../views/Home.vue';
+import store from '@/store/index';
+import Home from '@/views/Home.vue';
+import Layout from '@/components/templates/Layout.vue';
 
 Vue.use(VueRouter);
 
 const routes = [
   {
     path: '/',
-    name: 'Home',
-    component: Home,
+    component: Layout,
+    beforeEnter: async (to, from, next) => {
+      await store.dispatch('shop/getProducts');
+      await store.dispatch('common/getTemplate', 'home');
+      next();
+    },
+    children: [
+      {
+        path: '',
+        name: 'home',
+        component: Home,
+        meta: {
+        },
+      },
+    ],
   },
   {
     path: '/about',

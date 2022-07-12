@@ -1,0 +1,90 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+	.btn {
+		@apply inline-block text-sm font-body font-bold px-6 py-3
+		rounded-full border transition-colors duration-500;
+	}
+
+	/* .btn:hover {
+		@apply border-transparent;
+	} */
+
+	.btn:focus {
+		@apply outline-none;
+	}
+
+	.btn-small {
+		@apply px-3 py-1;
+	}
+
+	.btn-slim {
+		@apply text-xs px-6 py-2;
+	}
+
+	.btn-tight {
+		@apply px-3 py-1;
+	}
+
+	.btn-label {
+		@apply text-sm font-medium text-gray-500;
+	}
+
+	.btn-label:hover {
+		@apply text-primary border-primary;
+	}
+
+	.btn-primary {
+		@apply bg-primary text-white border-primary;
+	}
+
+	.btn-primary:hover {
+		@apply bg-primary-hover border-primary-hover text-white;
+	}
+
+	.btn-secondary {
+		@apply bg-gray-300 text-white border-gray-300;
+	}
+
+	.btn-secondary:hover {
+		@apply bg-gray-100 border-gray-100;
+	}
+}
+
+@font-face {
+	font-family : "zwolightplainalt20mlregular";
+	src         : url("/fonts/zwolight-plainalt-20mltr-webfont.ttf");
+	src         : url("/fonts/zwolight-plainalt-20mltr-webfont.eot");
+	src         : url("/fonts/zwolight-plainalt-20mltr-webfont.eot#iefix") format("embedded-opentype"),
+	url("/fonts/zwolight-plainalt-20mltr-webfont.woff") format("woff"),
+	url("/fonts/zwolight-plainalt-20mltr-webfont.ttf") format("truetype"),
+	url("/fonts/zwolight-plainalt-20mltr-webfont.svg") format("svg");
+	font-weight : normal;
+	font-style  : normal;
+}
+
+@font-face {
+	font-family : "zwoboldplainalt20mlregular";
+	src         : url("/fonts/zwobold-plainalt-20mltr-webfont.eot");
+	src         : url("/fonts/zwobold-plainalt-20mltr-webfont.eot#iefix") format("embedded-opentype"),
+	url("/fonts/zwobold-plainalt-20mltr-webfont.woff") format("woff"),
+	url("/fonts/zwobold-plainalt-20mltr-webfont.ttf") format("truetype"),
+	url("/fonts/zwobold-plainalt-20mltr-webfont.svg") format("svg");
+	font-weight : normal;
+	font-style  : normal;
+}
+
+
+
+@font-face {
+	font-family : "platelettrregular";
+	src         : url("/fonts/platelettrregular-webfont.eot");
+	src         : url("/fonts/platelettrregular-webfont.eot#iefix") format("embedded-opentype"),
+	url("/fonts/platelettrregular-webfont.woff") format("woff"),
+	url("/fonts/platelettrregular-webfont.ttf") format("truetype"),
+	url("/fonts/platelettrregular-webfont.svg") format("svg");
+	font-weight : normal;
+	font-style  : normal;
+}
