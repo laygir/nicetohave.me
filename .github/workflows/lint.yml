@@ -1,0 +1,21 @@
+name: Lint
+
+on: pull_request
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v2
+    - name: Use Node.js ${{ matrix.node-version }}
+      uses: actions/setup-node@v2
+      with:
+        node-version: '12'
+    - name: npm install
+      run: |
+        npm install
+    - name: ESLint
+      uses: tinovyatkin/action-eslint@v1
+      with:
+        repo-token: ${{secrets.GITHUB_TOKEN}}
+        check-name: ESLint # this is the check name from above 👆 where to post annotations
